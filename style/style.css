@@ -35,7 +35,7 @@ section .detail {
 
 /* 1.제목 */
 .bg_out {
-    background:pink; border-bottom-left-radius:35%; border-bottom-right-radius:35%;
+    border-bottom-left-radius:35%; border-bottom-right-radius:35%;
     overflow:hidden;
 }
 .bg_out .cover_bg {
