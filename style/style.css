@@ -1,7 +1,10 @@
-/* 버튼 */
+/* 투어보러가기  */
 section .go_btn {
     display:inline-block;
     background:#FFCB2F; padding:20px 100px; border-radius:50px;
+}
+section .go_btn:hover {
+    background:#EC524B;
 }
 section .go_btn span {
     color:#fff; font-size:1.777rem; 
@@ -31,21 +34,25 @@ section .detail {
 }
 
 /* 1.제목 */
-.cover_bg {
+.bg_out {
+    background:pink; border-bottom-left-radius:35%; border-bottom-right-radius:35%;
+    overflow:hidden;
+}
+.bg_out .cover_bg {
     background:url(../image/1_bg.jpg) no-repeat fixed 0 bottom;
     background-size:cover;
 }
-.cover_bg .cover {
+.bg_out .cover_bg .cover {
     width:1200px; height:900px; margin:0 auto;
     display:flex; flex-flow:column nowrap; align-items:center;
 }
-.cover_bg .cover .maintitle {margin-top:159px; margin-bottom:191px;
+.bg_out .cover_bg .cover .maintitle {margin-top:159px; margin-bottom:191px;
 }
-.cover_bg .cover .maintitle img {}
-.cover_bg .cover .go_btn {
+.bg_out .cover_bg .cover .maintitle img {}
+.bg_out .cover_bg .cover .go_btn {
 }
-.cover_bg .cover .go_btn span {}
-.cover_bg .cover .go_btn img {}
+.bg_out .cover_bg .cover .go_btn span {}
+.bg_out .cover_bg .cover .go_btn img {}
 /* 2.혜택 */
 .benefit_bg {
     background: linear-gradient(180deg, rgba(221, 240, 232, 0.34) 0%, rgba(255, 255, 255, 0.00) 0.01%, rgba(255, 255, 255, 0.24) 72.40%, rgba(255, 250, 225, 0.92) 100%);
@@ -350,6 +357,9 @@ section .detail {
 .quiz_bg .quiz .container .left #quizFrm fieldset #quizBtn {
     display:inline-block; padding:15px 170px; background:#333; border-radius:30px; 
     color:#fff; font-size:1.333rem; letter-spacing:-0.04em;
+}
+.quiz_bg .quiz .container .left #quizFrm fieldset #quizBtn:hover {
+    background:#FFCB2F;
 }
 .quiz_bg .quiz .container .right {width:550px;}
 .quiz_bg .quiz .container .right .dday {margin-bottom:30px;}
