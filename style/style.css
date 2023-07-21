@@ -116,7 +116,7 @@ section .detail {
     width:calc(50% - 36px / 2); margin-bottom:36px;
 }
 .preview_bg .preview .photo img:hover {
-    transform:scale(1.1);
+    transform:scale(1.05);
 }
 /* 4.명소 */
 .place_bg {
@@ -136,6 +136,9 @@ section .detail {
 .place_bg .place .title .title_big .en {}
 .place_bg .place .place_list {}
 .place_bg .place .place_list li {position:relative; margin-bottom:30px;}
+.place_bg .place .place_list li:hover {
+    transform:scale(1.05);
+}
 .place_bg .place .place_list li:last-child {margin-bottom:0;}
 .place_bg .place .place_list li .place_img {}
 .place_bg .place .place_list li .place_img img {
@@ -190,7 +193,6 @@ section .detail {
     display:flex; flex-flow:column nowrap; align-items:center;
     margin-bottom:50px; 
     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
-
 }
 .food_bg .food .container .top h3 {
     font-size:1.777rem; color:#333; font-weight:700; letter-spacing:-0.06em;
@@ -218,6 +220,7 @@ section .detail {
     width:calc(33.33% - 40px / 3); margin-right:20px;
     display:flex; flex-flow:column nowrap; align-items:center; margin-bottom:50px;
 }
+.food_bg .food .container .bottom li:hover {transform:scale(1.05);}
 .food_bg .food .container .bottom li:nth-child(4),
 .food_bg .food .container .bottom li:nth-child(5) {margin-bottom:0;}
 .food_bg .food .container .bottom li > * {margin-bottom:15px;}
@@ -256,6 +259,7 @@ section .detail {
 .activity_bg .activity .activity_list li {
     width:calc(33.33% - 40px / 3); margin-right:20px;
 }
+.activity_bg .activity .activity_list li:hover {transform:scale(1.05);}
 .activity_bg .activity .activity_list li:last-child {margin-right:0;}
 .activity_bg .activity .activity_list li p:first-child {margin-bottom:20px;}
 .activity_bg .activity .activity_list li p img {}
