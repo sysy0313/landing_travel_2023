@@ -106,7 +106,7 @@ section .detail {
 .preview_bg .preview .title {margin-bottom:40px;}
 .preview_bg .preview .title .title_big {}
 .preview_bg .preview .title .title_big em {}
-.preview_bg .preview .title .title_big em span {font-weight:700; font-size:2.369rem;}
+.preview_bg .preview .title .title_big em span {font-family:chana; font-weight:700; font-size:2.369rem;}
 .preview_bg .preview .title .title_big .ko {}
 .preview_bg .preview .detail {margin-bottom:70px; color:#333;}
 .preview_bg .preview .photo {
