@@ -1,3 +1,5 @@
+main {min-width:1200px;}
+.wrap {width:1200px; margin:0 auto;}
 /* 투어보러가기  */
 section .go_btn {
     display:inline-block;
@@ -35,22 +37,21 @@ section .detail {
 
 /* 1.제목 */
 .bg_out {
-    border-bottom-left-radius:35%; border-bottom-right-radius:35%;
-    overflow:hidden;
+    border-bottom-left-radius:35%; border-bottom-right-radius:35%; overflow:hidden;
 }
 .bg_out .cover_bg {
     background:url(../image/1_bg.jpg) no-repeat fixed 0 bottom;
     background-size:cover;
 }
 .bg_out .cover_bg .cover {
-    width:1200px; height:900px; margin:0 auto;
-    display:flex; flex-flow:column nowrap; align-items:center;
+    height:900px; margin:0 auto;
+    display:flex; flex-flow:column nowrap; align-items:center; 
+    position:relative; padding-top:200px;
 }
-.bg_out .cover_bg .cover .maintitle {margin-top:159px; margin-bottom:191px;
+.bg_out .cover_bg .cover .maintitle {/* margin-top:159px; margin-bottom:191px; */
 }
 .bg_out .cover_bg .cover .maintitle img {}
-.bg_out .cover_bg .cover .go_btn {
-}
+.bg_out .cover_bg .cover .go_btn {position:absolute; bottom:100px; left:50%; transform:translateX(-50%)}
 .bg_out .cover_bg .cover .go_btn span {}
 .bg_out .cover_bg .cover .go_btn img {}
 /* 2.혜택 */
@@ -58,7 +59,6 @@ section .detail {
     background: linear-gradient(180deg, rgba(221, 240, 232, 0.34) 0%, rgba(255, 255, 255, 0.00) 0.01%, rgba(255, 255, 255, 0.24) 72.40%, rgba(255, 250, 225, 0.92) 100%);
 }
 .benefit_bg .benefit {
-    width:1200px; margin:0 auto;
     display:flex; flex-flow:column nowrap; align-items:center; padding:100px 0;
 }
 .benefit_bg .benefit > * {margin-bottom:70px;}
@@ -78,7 +78,7 @@ section .detail {
 }
 .benefit_bg .benefit .benefit_list li:last-child {margin-right:0;}
 .benefit_bg .benefit .benefit_list li img {
-    margin-bottom:25px;
+    margin-bottom:25px; width:100%;
 }
 .benefit_bg .benefit .benefit_list li span {}
 .benefit_bg .benefit .benefit_list li span:nth-of-type(1) {
@@ -99,8 +99,7 @@ section .detail {
 .preview_bg {
     background:#FFFAE1;
 }
-.preview_bg .preview {
-    width:1200px; margin:0 auto; padding:100px 0; 
+.preview_bg .preview { padding:100px 0; 
     display:flex; flex-flow:column nowrap; align-items:center;
 }
 .preview_bg .preview .title {margin-bottom:40px;}
@@ -124,7 +123,7 @@ section .detail {
     background-size:cover;
 }
 .place_bg .place {
-    width:1200px; margin:0 auto; padding:100px 0; 
+    padding:100px 0; 
     display:flex; flex-flow:column nowrap; align-items:center;
 }
 .place_bg .place > * {margin-bottom:70px;}
@@ -134,23 +133,28 @@ section .detail {
 .place_bg .place .title .title_big {}
 .place_bg .place .title .title_big em {}
 .place_bg .place .title .title_big .en {}
-.place_bg .place .place_list {}
-.place_bg .place .place_list li {position:relative; margin-bottom:30px;}
-.place_bg .place .place_list li:last-child {margin-bottom:0;}
-.place_bg .place .place_list li .place_img {}
-.place_bg .place .place_list li .place_img img {
-    width:100%;
+.place_bg .place .place_list {width:100%;}
+.place_bg .place .place_list li {
+    background:#fff; height:350px;
+    margin-bottom:30px; overflow:hidden;
+    display:flex; justify-content:space-between; align-items:center;
+    border-top-left-radius:25px; border-top-right-radius:100px;
+    border-bottom-left-radius:100px; border-bottom-right-radius:25px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
+.place_bg .place .place_list li:last-child {margin-bottom:0;}
+.place_bg .place .place_list li .place_img {width:50%; height:350px;}
+.place_bg .place .place_list li:nth-child(1) .place_img {background-image:url(../image/place_img1.jpg)}
+.place_bg .place .place_list li:nth-child(2) .place_img {background-image:url(../image/place_img2.jpg)}
+.place_bg .place .place_list li:nth-child(3) .place_img {background-image:url(../image/place_img3.jpg)}
 .place_bg .place .place_list li .place_detail {
-    padding:25px; 
-    position:absolute; 
-    top:40px; right:0;
+    padding:25px; width:50%;
 }
 .place_bg .place .place_list li .place_detail h3 {
     font-size:2.369rem; font-weight:700; letter-spacing:-0.06em; color:#FFCB2F;
 }
 .place_bg .place .place_list li .place_detail h3 span {
-    font-size:1.777rem; font-weight:700; letter-spacing:-0.06em;
+    font-size:1.5rem; font-weight:700; letter-spacing:-0.06em;
 }
 .place_bg .place .place_list li:nth-child(3) .place_detail h3 {letter-spacing:-0.07em;}
 .place_bg .place .place_list li:nth-child(3) .place_detail h3 span {letter-spacing:-0.07em;}
@@ -164,16 +168,14 @@ section .detail {
 .place_bg .place .place_list li:nth-child(2) .place_detail {
     left:0;
 }
-.place_bg .place .contents_video {}
-.place_bg .place .contents_video iframe {
-    width:1200px;
-}
+.place_bg .place .contents_video {width:100%;}
+.place_bg .place .contents_video iframe {width:100%;}
 /* 5.맛집 */
 .food_bg {
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, #FFFAE1 100%), #FFD75E;
 }
 .food_bg .food {
-    width:1200px; margin:0 auto; padding:100px 0;
+    padding:100px 0;
     display:flex; flex-flow:column nowrap; align-items:center;
 }
 .food_bg .food > * {margin-bottom:50px;}
@@ -186,7 +188,7 @@ section .detail {
 .food_bg .food .container {}
 .food_bg .food .container .top {
     padding:30px 0;
-    background:#fff; border-radius:25px; width:1200px;
+    background:#fff; border-radius:25px; width:100%;
     display:flex; flex-flow:column nowrap; align-items:center;
     margin-bottom:50px; 
     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -211,6 +213,7 @@ section .detail {
 .food_bg .food .container .top p span:nth-child(3) {margin-right:101px;}
 .food_bg .food .container .top p span:nth-child(4) {margin-right:92px;}
 .food_bg .food .container .bottom {
+    width:100%;
     display:flex; flex-flow:row wrap; justify-content:center; 
 }
 .food_bg .food .container .bottom li {
@@ -222,7 +225,7 @@ section .detail {
 .food_bg .food .container .bottom li > * {margin-bottom:15px;}
 .food_bg .food .container .bottom li:nth-child(3n) {margin-right:0;}
 .food_bg .food .container .bottom li p {}
-.food_bg .food .container .bottom li p img {}
+.food_bg .food .container .bottom li p img {width:100%;}
 .food_bg .food .container .bottom li .food_type {font-weight:500; letter-spacing:-0.06em; color:#333;}
 .food_bg .food .container .bottom li h3 {
     font-size:1.777rem; font-weight:700; color:#EC524B; letter-spacing:-0.06em; 
@@ -240,7 +243,7 @@ section .detail {
     background:#FFFAE1;
 }
 .activity_bg .activity {
-    width:1200px; margin:0 auto; padding:100px 0;
+    padding:100px 0;
     display:flex; flex-flow:column nowrap;
     align-items:center; 
 }
@@ -257,7 +260,7 @@ section .detail {
 }
 .activity_bg .activity .activity_list li:last-child {margin-right:0;}
 .activity_bg .activity .activity_list li p:first-child {margin-bottom:20px;}
-.activity_bg .activity .activity_list li p img {}
+.activity_bg .activity .activity_list li p img {width:100%;}
 .activity_bg .activity .activity_list li h3 {
     font-size:1.777rem; font-weight:700; letter-spacing:-0.06em; 
     display:flex; flex-flow:column nowrap; align-items:center; color:#EC524B;
@@ -274,7 +277,7 @@ section .detail {
     background-size:cover;
 }
 .resort_bg .resort {
-    width:1200px; margin:0 auto; padding:100px 0;
+    padding:100px 0;
     display:flex; flex-flow:column nowrap; 
     align-items:center;
 }
@@ -287,7 +290,7 @@ section .detail {
 .resort_bg .resort .title .title_big span {}
 .resort_bg .resort .container {}
 .resort_bg .resort .container .contents {
-    width:1200px;
+    width:100%;
     display:flex; flex-flow:row nowrap;
     justify-content:space-between;
 }
@@ -320,7 +323,7 @@ section .detail {
     background-size:cover; 
 }
 .quiz_bg .quiz {
-    width:1200px; margin:0 auto; padding:100px 0;
+    padding:100px 0;
 }
 .quiz_bg .quiz .title {text-align:center; margin-bottom:70px;}
 .quiz_bg .quiz .title .pen {}
@@ -388,7 +391,7 @@ section .detail {
 }
 
 /* 9.유의사항 */
-.info {width:1200px; margin:0 auto; padding:100px 0;} 
+.info {padding:100px 0;} 
 .info p:first-child {
     font-size:1.333rem; letter-spacing:-0.06em; font-weight:500; margin-bottom:40px; color:#333;
 }
