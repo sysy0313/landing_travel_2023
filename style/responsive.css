@@ -2,15 +2,53 @@ main {min-width:320px;}
 @media screen and (max-width:1250px){
     .wrap {width:calc(100% - 30px)} 
     .bg_out .cover_bg {background-attachment: scroll;}
+    /* place */
+    .place_bg .place .place_list li .place_detail h3 {font-size:2rem;}
+    .place_bg .place .place_list li .place_detail h3 span {font-size:1.3rem;}
+    .place_bg .place .place_list li .place_detail p {font-size:1rem;}
 }/* 1200 end */
 @media screen and (max-width:1200px){
     .bg_out .cover_bg .cover .maintitle img {width:80%;}
 }/* 1200 end */
+@media screen and (max-width:1090px){
+    /* place */
+    .place_bg .place .place_list li .place_detail h3 {font-size:1.5rem;}
+    .place_bg .place .place_list li .place_detail h3 span {font-size:1.2rem;}
+    /* activity */
+    .activity_bg .activity .activity_list li .list_detail {font-size:1rem;}
+}/* 1090 end */
 @media screen and (max-width:1000px){
     /* 투어보러가기 버튼 */
     section .go_btn {padding:20px 50px;}
     section .go_btn span {font-size:1.5rem;}
 }/* 1000 end */
+@media screen and (max-width:960px){
+    /* place */
+    .place_bg .place .place_list li .place_detail h3 {font-size:1.3rem;}
+    .place_bg .place .place_list li .place_detail h3 span {font-size:1rem;}
+    .place_bg .place .place_list li .place_detail p {font-size:0.9rem;}
+}/* 960 end */
+@media screen and (max-width:930px){
+    .food_bg .food .container .top h3 {font-size:1.5rem; line-height:60px;}
+    .food_bg .food .container .top h3 span {font-size:2.5rem;}
+    .food_bg .food .container .top p img {width:600px;}
+    .food_bg .food .container .top p:nth-of-type(2) {width:480px;}
+    .food_bg .food .container .top p span {font-size:1rem;}
+    .food_bg .food .container .top p span:nth-child(1) {margin-right:48px;}
+    .food_bg .food .container .top p span:nth-child(2) {margin-right:52px;}
+    .food_bg .food .container .top p span:nth-child(3) {margin-right:66px;}
+    .food_bg .food .container .top p span:nth-child(4) {margin-right:57px;}
+}/* 930 end */
+@media screen and (max-width:850px){
+    /* food */
+    .food_bg .food .container .bottom li h3 {font-size:1.5rem;}
+    .food_bg .food .container .bottom li .list_detail {font-size:1.2rem;}
+}/* 850 end */
+@media screen and (max-width:820px){
+    /* activity */
+    .activity_bg .activity .activity_list li h3 {font-size:1.3rem;}
+    .activity_bg .activity .activity_list li .list_detail {font-size:0.8rem;}
+}
 @media screen and (max-width:800px){
     /* 단락제목 */
     section .title .pen {font-size:2rem;}
@@ -24,18 +62,59 @@ main {min-width:320px;}
     .benefit_bg .benefit .benefit_list li span:nth-of-type(1) {font-size:2.5rem; margin-bottom:10px;}
     .benefit_bg .benefit .benefit_list li span:nth-of-type(2) {font-size:1.25rem; margin-bottom:15px;}
     .benefit_bg .benefit .benefit_list li em {font-size:1.777rem;}
+    /* preview */
+    .preview_bg .preview .photo img {
+        width:calc(50% - 20px / 2); margin-bottom:20px;
+    }
+    /* place */
+    .place_bg .place .place_list li {
+        flex-flow:column nowrap; height:auto;
+    }
+    .place_bg .place .place_list li .place_img {width:100%; height:350px; order:-1;}
+    .place_bg .place .place_list li .place_detail {width:100%; order:1; text-align:center;}
 }/* 800 end */
+@media screen and (max-width:760px){
+    /* food */
+    .food_bg .food .container .bottom li h3 {font-size:1.2rem;}
+    .food_bg .food .container .bottom li .list_detail {font-size:1rem;}
+}
 @media screen and (max-width:680px){
     .benefit_bg .benefit .benefit_list li span:nth-of-type(1) {font-size:2rem; margin-bottom:10px;}
     .benefit_bg .benefit .benefit_list li span:nth-of-type(2) {font-size:1rem; margin-bottom:15px;}
     .benefit_bg .benefit .benefit_list li em {font-size:1.563rem;}
-}
+    /* food */
+    .food_bg .food .container .top h3 {font-size:1.3rem; line-height:50px;}
+    .food_bg .food .container .top h3 span {font-size:2rem;}
+    .food_bg .food .container .top p img {width:450px;}
+    .food_bg .food .container .top p:nth-of-type(2) {width:360px;}
+    .food_bg .food .container .top p span {font-size:0.8rem;}
+    .food_bg .food .container .top p span:nth-child(1) {margin-right:30px;}
+    .food_bg .food .container .top p span:nth-child(2) {margin-right:40px;}
+    .food_bg .food .container .top p span:nth-child(3) {margin-right:42px;}
+    .food_bg .food .container .top p span:nth-child(4) {margin-right:42px;}
+    .food_bg .food .container .bottom li {
+        width:calc(33.33% - 20px / 3); margin-right:10px;
+    }
+    /* activity */
+    .activity_bg .activity .activity_list li h3 {font-size:1.2rem;}
+    .activity_bg .activity .activity_list li .list_detail {font-size:0.6rem; line-height:30px;}
+}/* 680 end */
 @media screen and (max-width:660px){
     .bg_out {border-radius:0%;}
     /* 버튼 */
     section .go_btn {padding:12px 30px;}
     section .go_btn span {font-size:1.2rem;}
 }/* 660 end */
+@media screen and (max-width:630px){
+    /* food */
+    .food_bg .food .container .bottom li .food_type {font-size:0.8rem;}
+    .food_bg .food .container .bottom li h3 {font-size:1rem;}
+    .food_bg .food .container .bottom li .list_detail {font-size:0.8rem;}
+}
+@media screen and (max-width:600px){
+    /* place */
+    .place_bg .place .place_list li .place_img {height:250px;}
+}/* 600 end */
 @media screen and (max-width:560px){
     /* 단락제목 */
     section .title .pen {font-size:1.5rem; margin-bottom:15px;}
@@ -50,10 +129,35 @@ main {min-width:320px;}
     .benefit_bg .benefit .benefit_list li span:nth-of-type(2) {font-size:0.8rem; margin-bottom:15px; letter-spacing:-0.06em;}
     .benefit_bg .benefit .benefit_list li em {font-size:1.3rem;}
 }/* 560 end */
+@media screen and (max-width:530px){
+    /* activity */
+    .activity_bg .activity .activity_list li {width:calc(33.33% - 20px / 3); margin-right:10px;}
+    .activity_bg .activity .activity_list li h3 {font-size:1rem;}
+}/* 530 end */
+@media screen and (max-width:515px){
+    /* food */
+    .food_bg .food .container .bottom li .food_type {font-size:0.6rem;}
+    .food_bg .food .container .bottom li h3 {font-size:0.8rem;}
+    .food_bg .food .container .bottom li .list_detail {font-size:0.6rem;}
+}
+@media screen and (max-width:510px){
+    /* food */
+    .food_bg .food .container .top p img {width:350px;}
+    .food_bg .food .container .top p:nth-of-type(2) {width:280px;}
+    .food_bg .food .container .top p span {font-size:0.7rem;}
+    .food_bg .food .container .top p span:nth-child(1) {margin-right:15px;}
+    .food_bg .food .container .top p span:nth-child(2) {margin-right:25px;}
+    .food_bg .food .container .top p span:nth-child(3) {margin-right:32px;}
+    .food_bg .food .container .top p span:nth-child(4) {margin-right:25px;}
+}
 @media screen and (max-width:500px){
     /* 버튼 */
     section .go_btn {padding:12px 20px;}
     section .go_btn span {font-size:1rem;}
+    /* preview */
+    .preview_bg .preview .photo img {
+        width:calc(50% - 10px / 2); margin-bottom:10px;
+    }
 }/* 500 end */
 @media screen and (max-width:480px){
     .benefit_bg .benefit .benefit_list li span:nth-of-type(1) {font-size:1.3rem; margin-bottom:5px;}
@@ -68,10 +172,20 @@ main {min-width:320px;}
     section .title .title_big .ko {font-size:1.7rem;}
     section .title .title_big .en {font-size:1.7rem;}
 }/* 460 end */
+@media screen and (max-width:430px){
+    /* activity */
+    .activity_bg .activity .activity_list li {width:calc(33.33% - 10px / 3); margin-right:5px;}
+    .activity_bg .activity .activity_list li h3 {font-size:0.8rem; letter-spacing:-0.1em;}
+}
 @media screen and (max-width:410px){
     /* 버튼 */
     section .go_btn {width:calc(100% - 80px); }
     section .go_btn span {font-size:1.2rem;}
+    /* food */
+    .food_bg .food .container .bottom li {
+        width:calc(33.33% - 10px / 3); margin-right:5px;
+    }
+    .food_bg .food .container .bottom li h3 {font-size:0.6rem;}
 }/* 410 end */
 @media screen and (max-width:400px){
     /* 단락제목 */
@@ -81,6 +195,16 @@ main {min-width:320px;}
     section .title .title_big .ko {font-size:1.5rem;}
     section .title .title_big .en {font-size:1.5rem;}
     section .detail {font-size:0.8rem; line-height:30px;}
+    /* food */
+    .food_bg .food .container .top h3 {font-size:1.2rem; line-height:45px;}
+    .food_bg .food .container .top h3 span {font-size:1.8rem;}
+    .food_bg .food .container .top p img {width:280px;}
+    .food_bg .food .container .top p:nth-of-type(2) {width:230px;}
+    .food_bg .food .container .top p span {font-size:0.65rem;}
+    .food_bg .food .container .top p span:nth-child(1) {margin-right:8px;}
+    .food_bg .food .container .top p span:nth-child(2) {margin-right:14px;}
+    .food_bg .food .container .top p span:nth-child(3) {margin-right:21px;}
+    .food_bg .food .container .top p span:nth-child(4) {margin-right:17px;}
 }/* 400 end */
 @media screen and (max-width:390px){
     .benefit_bg .benefit .benefit_list li {width:calc(33.33% - 10px / 3); margin-right:5px;}
