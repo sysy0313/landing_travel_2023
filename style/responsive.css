@@ -1,0 +1,97 @@
+main {min-width:320px;}
+@media screen and (max-width:1250px){
+    .wrap {width:calc(100% - 30px)} 
+    .bg_out .cover_bg {background-attachment: scroll;}
+}/* 1200 end */
+@media screen and (max-width:1200px){
+    .bg_out .cover_bg .cover .maintitle img {width:80%;}
+}/* 1200 end */
+@media screen and (max-width:1000px){
+    /* 투어보러가기 버튼 */
+    section .go_btn {padding:20px 50px;}
+    section .go_btn span {font-size:1.5rem;}
+}/* 1000 end */
+@media screen and (max-width:800px){
+    /* 단락제목 */
+    section .title .pen {font-size:2rem;}
+    section .title .title_big em {font-size:2.5rem;}
+    .preview_bg .preview .title .title_big em span {font-size:2.5rem;}
+    section .title .title_big .ko {font-size:2.5rem;}
+    section .title .title_big .en {font-size:2.5rem;}
+    section .detail {font-size:1.25rem; line-height:40px;}
+    /* benefit */
+    .benefit_bg .benefit > * {margin-bottom:50px;}
+    .benefit_bg .benefit .benefit_list li span:nth-of-type(1) {font-size:2.5rem; margin-bottom:10px;}
+    .benefit_bg .benefit .benefit_list li span:nth-of-type(2) {font-size:1.25rem; margin-bottom:15px;}
+    .benefit_bg .benefit .benefit_list li em {font-size:1.777rem;}
+}/* 800 end */
+@media screen and (max-width:680px){
+    .benefit_bg .benefit .benefit_list li span:nth-of-type(1) {font-size:2rem; margin-bottom:10px;}
+    .benefit_bg .benefit .benefit_list li span:nth-of-type(2) {font-size:1rem; margin-bottom:15px;}
+    .benefit_bg .benefit .benefit_list li em {font-size:1.563rem;}
+}
+@media screen and (max-width:660px){
+    .bg_out {border-radius:0%;}
+    /* 버튼 */
+    section .go_btn {padding:12px 30px;}
+    section .go_btn span {font-size:1.2rem;}
+}/* 660 end */
+@media screen and (max-width:560px){
+    /* 단락제목 */
+    section .title .pen {font-size:1.5rem; margin-bottom:15px;}
+    section .title .title_big em {font-size:2rem;}
+    .preview_bg .preview .title .title_big em span {font-size:2rem;}
+    section .title .title_big .ko {font-size:2rem;}
+    section .title .title_big .en {font-size:2rem;}
+    section .detail {font-size:1rem; line-height:40px;}
+    /* benefit */
+    .benefit_bg .benefit .benefit_list li {width:calc(33.33% - 20px / 3); margin-right:10px;}
+    .benefit_bg .benefit .benefit_list li span:nth-of-type(1) {font-size:1.5rem; margin-bottom:10px;}
+    .benefit_bg .benefit .benefit_list li span:nth-of-type(2) {font-size:0.8rem; margin-bottom:15px; letter-spacing:-0.06em;}
+    .benefit_bg .benefit .benefit_list li em {font-size:1.3rem;}
+}/* 560 end */
+@media screen and (max-width:500px){
+    /* 버튼 */
+    section .go_btn {padding:12px 20px;}
+    section .go_btn span {font-size:1rem;}
+}/* 500 end */
+@media screen and (max-width:480px){
+    .benefit_bg .benefit .benefit_list li span:nth-of-type(1) {font-size:1.3rem; margin-bottom:5px;}
+    .benefit_bg .benefit .benefit_list li span:nth-of-type(2) {font-size:0.7rem; margin-bottom:10px; letter-spacing:-0.06em;}
+    .benefit_bg .benefit .benefit_list li em {font-size:1rem;}
+}/* 480 end */
+@media screen and (max-width:460px){
+    /* 단락제목 */
+    section .title .pen {font-size:1.33rem;}
+    section .title .title_big em {font-size:1.7rem;}
+    .preview_bg .preview .title .title_big em span {font-size:1.7rem;}
+    section .title .title_big .ko {font-size:1.7rem;}
+    section .title .title_big .en {font-size:1.7rem;}
+}/* 460 end */
+@media screen and (max-width:410px){
+    /* 버튼 */
+    section .go_btn {width:calc(100% - 80px); }
+    section .go_btn span {font-size:1.2rem;}
+}/* 410 end */
+@media screen and (max-width:400px){
+    /* 단락제목 */
+    section .title .pen {font-size:1rem;}
+    section .title .title_big em {font-size:1.5rem;}
+    .preview_bg .preview .title .title_big em span {font-size:1.5rem;}
+    section .title .title_big .ko {font-size:1.5rem;}
+    section .title .title_big .en {font-size:1.5rem;}
+    section .detail {font-size:0.8rem; line-height:30px;}
+}/* 400 end */
+@media screen and (max-width:390px){
+    .benefit_bg .benefit .benefit_list li {width:calc(33.33% - 10px / 3); margin-right:5px;}
+    .benefit_bg .benefit .benefit_list li span:nth-of-type(2) {font-size:0.6rem; margin-bottom:10px; letter-spacing:-0.08em;}
+    .benefit_bg .benefit .go_btn span {font-size:1rem; letter-spacing:-0.06em;}
+}/* 390 end */
+@media screen and (max-width:360px){
+    /* 단락제목 */
+    section .title .title_big em {font-size:1.333rem;}
+    .preview_bg .preview .title .title_big em span {font-size:1.333rem;}
+    section .title .title_big .ko {font-size:1.333rem;}
+    section .title .title_big .en {font-size:1.333rem;}
+    section .detail {font-size:0.8rem; line-height:30px;}
+}/* 360 end */

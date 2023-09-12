@@ -1,9 +1,9 @@
-main {min-width:1200px;}
 .wrap {width:1200px; margin:0 auto;}
 /* 투어보러가기  */
 section .go_btn {
-    display:inline-block;
+    display:flex; align-items:center; justify-content:center;
     background:#FFCB2F; padding:20px 100px; border-radius:50px;
+    transition:all 0.2s linear;
 }
 section .go_btn:hover {
     background:#EC524B;
@@ -40,15 +40,17 @@ section .detail {
     border-bottom-left-radius:35%; border-bottom-right-radius:35%; overflow:hidden;
 }
 .bg_out .cover_bg {
-    background:url(../image/1_bg.jpg) no-repeat fixed 0 bottom;
+    background:url(../image/1_bg.jpg) no-repeat;
+    background-attachment:fixed;
     background-size:cover;
+    background-position:bottom;
 }
 .bg_out .cover_bg .cover {
-    height:900px; margin:0 auto;
+    height:100vh; margin:0 auto;
     display:flex; flex-flow:column nowrap; align-items:center; 
     position:relative; padding-top:200px;
 }
-.bg_out .cover_bg .cover .maintitle {/* margin-top:159px; margin-bottom:191px; */
+.bg_out .cover_bg .cover .maintitle {/* margin-top:159px; margin-bottom:191px; */ text-align:center;
 }
 .bg_out .cover_bg .cover .maintitle img {}
 .bg_out .cover_bg .cover .go_btn {position:absolute; bottom:100px; left:50%; transform:translateX(-50%)}
